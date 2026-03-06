@@ -28,11 +28,8 @@ def calculateFinalPrice():
     tk.Label(root, text="The Final Price is ").grid(row=5,column=2)
     originalPrice: float = float(entry1.get())
     discountPrice: float = float(entry2.get()) / 100
-    if discountPrice > 100 or discountPrice < 0 :
-        tk.Label(root,text="Please insert positive number or less than 100")
-    else :
-        total: float = round(originalPrice - (originalPrice * discountPrice),0)
-        tk.Label(root, text=total).grid(row=6,column=2)
+    total: float = round(originalPrice - (originalPrice * discountPrice),0)
+    tk.Label(root, text=total).grid(row=6,column=2)
 
 # Button
 calculateButton = tk.Button(root, command=calculateFinalPrice, text="Calculate").grid(row=4,column=2)
