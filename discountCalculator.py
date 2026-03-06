@@ -18,7 +18,7 @@ entry1 = tk.Entry(root)
 entry1.grid(row=1, column=2)
 
 # Label for Discount
-tk.Label(root, text="Discount",justify="center").grid(row=2, column=2)
+tk.Label(root, text="Discount %",justify="center").grid(row=2, column=2)
 # Input Field for Discount
 entry2 = tk.Entry(root)
 entry2.grid(row=3, column=2)
